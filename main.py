@@ -6,7 +6,9 @@ while True:
     if nombre.lower() == "salir":
         break
 
-    archivo.write(nombre + "\n")
+    edad = input("Introduce la edad: ")
+
+    archivo.write(f"{nombre} - {edad}\n")
 
 archivo.close()
 
